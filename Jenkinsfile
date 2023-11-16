@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('build_env') {
       steps {
         git(url: 'https://github.com/vietnguyen07/sandbox', branch: 'master')
       }
