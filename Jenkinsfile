@@ -16,6 +16,12 @@ pipeline {
           }
         }
 
+        stage('gcc_version') {
+          steps {
+            sh 'gcc -v'
+          }
+        }
+
       }
     }
 
