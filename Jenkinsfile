@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'linux_agents'
+    }
+
+  }
   stages {
     stage('build_env') {
       parallel {
