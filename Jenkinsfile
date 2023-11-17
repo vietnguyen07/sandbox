@@ -12,6 +12,8 @@ pipeline {
           steps {
             git(url: 'https://github.com/vietnguyen07/sandbox', branch: 'master')
             echo 'pass test'
+            fileExists 'README.md'
+            sh 'ls'
           }
         }
 
