@@ -25,7 +25,8 @@ pipeline {
 
         stage('gcc_version') {
           steps {
-            sh 'gcc -v'
+            sh '''gcc -v;
+apt install make;'''
           }
         }
 
